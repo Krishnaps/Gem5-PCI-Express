@@ -1,0 +1,3 @@
+#!/bin/bash
+
+build/ARM/gem5.fast -d m5out/ configs/example/fs.py --dual  --machine-type=VExpress_GEM5_V1 --disk-image=$HOME/t_gem5/gem5/aarch-system-2014-10/disks/aarch32-ubuntu-natty-headless_backup_lspci.img --disk-image1=$HOME/t_gem5/gem5/aarch-system-2014-10/disks/aarch32-ubuntu-natty-headless_backup.img --kernel=$HOME/t_gem5/vmlinux  --dtb-filename=$PWD/system/arm/dt/armv8_gem5_v1_1cpu.dtb  --cpu-type=TimingSimpleCPU --num-cpus=14 --caches --l2cache       --l1d_size=32kB --l1i_size=32kB --l2_size=256kB --l3_size=35840kB --l1d_assoc=8 --l1i_assoc=8 --l2_assoc=8 --l3_assoc=20 --cacheline_size=64 --mem-size=31.3GB --cpu-clock=1.2GHz  
