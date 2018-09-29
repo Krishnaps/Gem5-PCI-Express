@@ -15,4 +15,8 @@ downstream and one upstream port. Each "port" mentioned is further subdivided
 into a master/slave port pair for sending PIO requests to PCIE devices and
 receiving DMA requests from PCI Express devices respectively. 
 
+The Gem5 topology with PCIE links, PCI Express Root Complex, Switch and IDE controller is in configs/common/FSConfig.py
+
+m5out contains a checkpoint file that can be used, and vmlinux is the kernel image with PCI Express support. 
+
 
